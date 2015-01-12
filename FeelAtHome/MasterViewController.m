@@ -9,13 +9,30 @@
 #import "MasterViewController.h"
 
 #import "DetailViewController.h"
+#import "DeezerConnect.h"
+#import "DZRRequestManager.h"
+#import "DZRPlayer.h"
 
 @interface MasterViewController () {
     NSMutableArray *_objects;
 }
 @end
 
-@implementation MasterViewController
+static NSArray *dzrPerms;
+
+@implementation MasterViewController {
+    DZRPlayer *player;
+    DeezerConnect *connect;
+}
+
++ (NSArray*)dzrPerms {
+    static NSArray *dzrPerms;
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        dzrPerms = @[DeezerConnectPermissionBasicAccess];
+    });
+    return dzrPerms;
+}
 
 - (void)awakeFromNib
 {
@@ -35,6 +52,23 @@
     UIBarButtonItem *addButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(insertNewObject:)];
     self.navigationItem.rightBarButtonItem = addButton;
     self.detailViewController = (DetailViewController *)[[self.splitViewController.viewControllers lastObject] topViewController];
+    
+    connect = [DeezerConnect alloc];
+    [connect initWithAppId:@"150241" andDelegate: self];
+    [[DZRRequestManager defaultManager] setDzrConnect:connect];
+    [connect authorize:[[self class] dzrPerms]];
+}
+
+
+- (void)deezerDidLogin
+{
+    [player initWithConnection:connect];
+    [DZRObject searchFor:DZRSearchTypeTrack withQuery:@"" requestManager:Nil callback:^(DZRObjectList *objList, NSError *err) {
+        if (objList != nil)
+            [objList objectAtIndex:0 withManager:nil callback:^(id obj, NSError *error) {
+                [player play:obj];
+            }];
+    }];
 }
 
 - (void)didReceiveMemoryWarning

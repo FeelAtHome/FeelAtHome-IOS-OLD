@@ -7,11 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "DeezerConnect.h"
+#import "DZRPlayer.h"
 
 @class DetailViewController;
 
-@interface MasterViewController : UITableViewController
+@interface MasterViewController : UITableViewController<DeezerSessionDelegate>
 
 @property (strong, nonatomic) DetailViewController *detailViewController;
++ (NSArray*) dzrPerms;
 
 @end

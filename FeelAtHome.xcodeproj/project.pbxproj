@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9516A5ED1A6142B50083C0A6 /* DZRResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 9516A5CF1A6142B50083C0A6 /* DZRResources.bundle */; };
+		9516A5EE1A6142B50083C0A6 /* libDeezer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9516A5EC1A6142B50083C0A6 /* libDeezer.a */; };
+		9516A5F01A61435C0083C0A6 /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9516A5EF1A61435C0083C0A6 /* CoreAudio.framework */; };
+		9516A5F21A6143630083C0A6 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9516A5F11A6143630083C0A6 /* AudioToolbox.framework */; };
+		9516A5F41A61436A0083C0A6 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9516A5F31A61436A0083C0A6 /* SystemConfiguration.framework */; };
+		9516A5F61A6143730083C0A6 /* libicucore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9516A5F51A6143730083C0A6 /* libicucore.dylib */; };
 		95532AE41A614036007EA24E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95532AE31A614036007EA24E /* Foundation.framework */; };
 		95532AE61A614036007EA24E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95532AE51A614036007EA24E /* CoreGraphics.framework */; };
 		95532AE81A614036007EA24E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95532AE71A614036007EA24E /* UIKit.framework */; };
@@ -23,6 +29,7 @@
 		95532B0B1A614037007EA24E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95532AE71A614036007EA24E /* UIKit.framework */; };
 		95532B131A614037007EA24E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 95532B111A614037007EA24E /* InfoPlist.strings */; };
 		95532B151A614037007EA24E /* FeelAtHomeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 95532B141A614037007EA24E /* FeelAtHomeTests.m */; };
+		959A33381A61959900C6807A /* PebbleKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 959A33371A61959900C6807A /* PebbleKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +43,39 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9516A5CF1A6142B50083C0A6 /* DZRResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = DZRResources.bundle; sourceTree = "<group>"; };
+		9516A5D11A6142B50083C0A6 /* Deezer+Compatibility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Deezer+Compatibility.h"; sourceTree = "<group>"; };
+		9516A5D21A6142B50083C0A6 /* DeezerConnect+Compatibility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "DeezerConnect+Compatibility.h"; sourceTree = "<group>"; };
+		9516A5D31A6142B50083C0A6 /* DeezerConnect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeezerConnect.h; sourceTree = "<group>"; };
+		9516A5D41A6142B50083C0A6 /* DeezerRequestDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeezerRequestDelegate.h; sourceTree = "<group>"; };
+		9516A5D51A6142B50083C0A6 /* DZRAlbum.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DZRAlbum.h; sourceTree = "<group>"; };
+		9516A5D61A6142B50083C0A6 /* DZRArtist.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DZRArtist.h; sourceTree = "<group>"; };
+		9516A5D71A6142B50083C0A6 /* DZRCancelable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DZRCancelable.h; sourceTree = "<group>"; };
+		9516A5D81A6142B50083C0A6 /* DZRComment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DZRComment.h; sourceTree = "<group>"; };
+		9516A5D91A6142B50083C0A6 /* DZREditorial.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DZREditorial.h; sourceTree = "<group>"; };
+		9516A5DA1A6142B50083C0A6 /* DZRFolder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DZRFolder.h; sourceTree = "<group>"; };
+		9516A5DB1A6142B50083C0A6 /* DZRGenericCancelable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DZRGenericCancelable.h; sourceTree = "<group>"; };
+		9516A5DC1A6142B50083C0A6 /* DZRGenre.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DZRGenre.h; sourceTree = "<group>"; };
+		9516A5DD1A6142B50083C0A6 /* DZRManagedRadio.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DZRManagedRadio.h; sourceTree = "<group>"; };
+		9516A5DE1A6142B50083C0A6 /* DZRModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DZRModel.h; sourceTree = "<group>"; };
+		9516A5DF1A6142B50083C0A6 /* DZRNetworkRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DZRNetworkRequest.h; sourceTree = "<group>"; };
+		9516A5E01A6142B50083C0A6 /* DZRObject+Compatibility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "DZRObject+Compatibility.h"; sourceTree = "<group>"; };
+		9516A5E11A6142B50083C0A6 /* DZRObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DZRObject.h; sourceTree = "<group>"; };
+		9516A5E21A6142B50083C0A6 /* DZRObjectList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DZRObjectList.h; sourceTree = "<group>"; };
+		9516A5E31A6142B50083C0A6 /* DZRPlayableArray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DZRPlayableArray.h; sourceTree = "<group>"; };
+		9516A5E41A6142B50083C0A6 /* DZRPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DZRPlayer.h; sourceTree = "<group>"; };
+		9516A5E51A6142B50083C0A6 /* DZRPlaylist.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DZRPlaylist.h; sourceTree = "<group>"; };
+		9516A5E61A6142B50083C0A6 /* DZRRadio.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DZRRadio.h; sourceTree = "<group>"; };
+		9516A5E71A6142B50083C0A6 /* DZRRequestManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DZRRequestManager.h; sourceTree = "<group>"; };
+		9516A5E81A6142B50083C0A6 /* DZRTrack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DZRTrack.h; sourceTree = "<group>"; };
+		9516A5E91A6142B50083C0A6 /* DZRUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DZRUser.h; sourceTree = "<group>"; };
+		9516A5EA1A6142B50083C0A6 /* NSBundle+DZRBundle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSBundle+DZRBundle.h"; sourceTree = "<group>"; };
+		9516A5EB1A6142B50083C0A6 /* NSError+DZRModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSError+DZRModel.h"; sourceTree = "<group>"; };
+		9516A5EC1A6142B50083C0A6 /* libDeezer.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libDeezer.a; sourceTree = "<group>"; };
+		9516A5EF1A61435C0083C0A6 /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
+		9516A5F11A6143630083C0A6 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		9516A5F31A61436A0083C0A6 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		9516A5F51A6143730083C0A6 /* libicucore.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libicucore.dylib; path = usr/lib/libicucore.dylib; sourceTree = SDKROOT; };
 		95532AE01A614036007EA24E /* FeelAtHome.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FeelAtHome.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		95532AE31A614036007EA24E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		95532AE51A614036007EA24E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -45,7 +85,7 @@
 		95532AEF1A614037007EA24E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		95532AF11A614037007EA24E /* FeelAtHome-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FeelAtHome-Prefix.pch"; sourceTree = "<group>"; };
 		95532AF21A614037007EA24E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		95532AF31A614037007EA24E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		95532AF31A614037007EA24E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = AppDelegate.m; sourceTree = "<group>"; };
 		95532AF61A614037007EA24E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
 		95532AF91A614037007EA24E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
 		95532AFB1A614037007EA24E /* MasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MasterViewController.h; sourceTree = "<group>"; };
@@ -58,6 +98,8 @@
 		95532B101A614037007EA24E /* FeelAtHomeTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FeelAtHomeTests-Info.plist"; sourceTree = "<group>"; };
 		95532B121A614037007EA24E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		95532B141A614037007EA24E /* FeelAtHomeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FeelAtHomeTests.m; sourceTree = "<group>"; };
+		959A33351A61956200C6807A /* PebbleKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PebbleKit.framework; path = "../pebble-ios-sdk/PebbleKit.framework"; sourceTree = "<group>"; };
+		959A33371A61959900C6807A /* PebbleKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = PebbleKit.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,7 +107,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9516A5F61A6143730083C0A6 /* libicucore.dylib in Frameworks */,
+				9516A5F41A61436A0083C0A6 /* SystemConfiguration.framework in Frameworks */,
+				9516A5F21A6143630083C0A6 /* AudioToolbox.framework in Frameworks */,
+				9516A5F01A61435C0083C0A6 /* CoreAudio.framework in Frameworks */,
+				9516A5EE1A6142B50083C0A6 /* libDeezer.a in Frameworks */,
 				95532AE61A614036007EA24E /* CoreGraphics.framework in Frameworks */,
+				959A33381A61959900C6807A /* PebbleKit.framework in Frameworks */,
 				95532AE81A614036007EA24E /* UIKit.framework in Frameworks */,
 				95532AE41A614036007EA24E /* Foundation.framework in Frameworks */,
 			);
@@ -84,9 +132,55 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9516A5CE1A6142B50083C0A6 /* DeezerSDK */ = {
+			isa = PBXGroup;
+			children = (
+				9516A5CF1A6142B50083C0A6 /* DZRResources.bundle */,
+				9516A5D01A6142B50083C0A6 /* include */,
+				9516A5EC1A6142B50083C0A6 /* libDeezer.a */,
+			);
+			path = DeezerSDK;
+			sourceTree = "<group>";
+		};
+		9516A5D01A6142B50083C0A6 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				9516A5D11A6142B50083C0A6 /* Deezer+Compatibility.h */,
+				9516A5D21A6142B50083C0A6 /* DeezerConnect+Compatibility.h */,
+				9516A5D31A6142B50083C0A6 /* DeezerConnect.h */,
+				9516A5D41A6142B50083C0A6 /* DeezerRequestDelegate.h */,
+				9516A5D51A6142B50083C0A6 /* DZRAlbum.h */,
+				9516A5D61A6142B50083C0A6 /* DZRArtist.h */,
+				9516A5D71A6142B50083C0A6 /* DZRCancelable.h */,
+				9516A5D81A6142B50083C0A6 /* DZRComment.h */,
+				9516A5D91A6142B50083C0A6 /* DZREditorial.h */,
+				9516A5DA1A6142B50083C0A6 /* DZRFolder.h */,
+				9516A5DB1A6142B50083C0A6 /* DZRGenericCancelable.h */,
+				9516A5DC1A6142B50083C0A6 /* DZRGenre.h */,
+				9516A5DD1A6142B50083C0A6 /* DZRManagedRadio.h */,
+				9516A5DE1A6142B50083C0A6 /* DZRModel.h */,
+				9516A5DF1A6142B50083C0A6 /* DZRNetworkRequest.h */,
+				9516A5E01A6142B50083C0A6 /* DZRObject+Compatibility.h */,
+				9516A5E11A6142B50083C0A6 /* DZRObject.h */,
+				9516A5E21A6142B50083C0A6 /* DZRObjectList.h */,
+				9516A5E31A6142B50083C0A6 /* DZRPlayableArray.h */,
+				9516A5E41A6142B50083C0A6 /* DZRPlayer.h */,
+				9516A5E51A6142B50083C0A6 /* DZRPlaylist.h */,
+				9516A5E61A6142B50083C0A6 /* DZRRadio.h */,
+				9516A5E71A6142B50083C0A6 /* DZRRequestManager.h */,
+				9516A5E81A6142B50083C0A6 /* DZRTrack.h */,
+				9516A5E91A6142B50083C0A6 /* DZRUser.h */,
+				9516A5EA1A6142B50083C0A6 /* NSBundle+DZRBundle.h */,
+				9516A5EB1A6142B50083C0A6 /* NSError+DZRModel.h */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
 		95532AD71A614036007EA24E = {
 			isa = PBXGroup;
 			children = (
+				959A33371A61959900C6807A /* PebbleKit.framework */,
+				9516A5CE1A6142B50083C0A6 /* DeezerSDK */,
 				95532AE91A614037007EA24E /* FeelAtHome */,
 				95532B0E1A614037007EA24E /* FeelAtHomeTests */,
 				95532AE21A614036007EA24E /* Frameworks */,
@@ -106,6 +200,11 @@
 		95532AE21A614036007EA24E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				959A33351A61956200C6807A /* PebbleKit.framework */,
+				9516A5F51A6143730083C0A6 /* libicucore.dylib */,
+				9516A5F31A61436A0083C0A6 /* SystemConfiguration.framework */,
+				9516A5F11A6143630083C0A6 /* AudioToolbox.framework */,
+				9516A5EF1A61435C0083C0A6 /* CoreAudio.framework */,
 				95532AE31A614036007EA24E /* Foundation.framework */,
 				95532AE51A614036007EA24E /* CoreGraphics.framework */,
 				95532AE71A614036007EA24E /* UIKit.framework */,
@@ -236,6 +335,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9516A5ED1A6142B50083C0A6 /* DZRResources.bundle in Resources */,
 				95532AFA1A614037007EA24E /* Main_iPad.storyboard in Resources */,
 				95532B021A614037007EA24E /* Images.xcassets in Resources */,
 				95532AF71A614037007EA24E /* Main_iPhone.storyboard in Resources */,
@@ -398,9 +498,19 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/franck/Documents/pebble-ios-sdk",
+					/Users/franck/Documents/FeelAtHome,
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "FeelAtHome/FeelAtHome-Prefix.pch";
 				INFOPLIST_FILE = "FeelAtHome/FeelAtHome-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/franck/Documents/FeelAtHome/DeezerSDK,
+				);
+				OTHER_LDFLAGS = "-all_load";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -411,9 +521,19 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/franck/Documents/pebble-ios-sdk",
+					/Users/franck/Documents/FeelAtHome,
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "FeelAtHome/FeelAtHome-Prefix.pch";
 				INFOPLIST_FILE = "FeelAtHome/FeelAtHome-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/franck/Documents/FeelAtHome/DeezerSDK,
+				);
+				OTHER_LDFLAGS = "-all_load";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -480,6 +600,7 @@
 				95532B1A1A614037007EA24E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		95532B1B1A614037007EA24E /* Build configuration list for PBXNativeTarget "FeelAtHomeTests" */ = {
 			isa = XCConfigurationList;
@@ -488,6 +609,7 @@
 				95532B1D1A614037007EA24E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

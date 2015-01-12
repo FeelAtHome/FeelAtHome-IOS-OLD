@@ -18,6 +18,19 @@
         UINavigationController *navigationController = [splitViewController.viewControllers lastObject];
         splitViewController.delegate = (id)navigationController.topViewController;
     }
+    self.connectedWatch = [[PBPebbleCentral defaultCentral] lastConnectedWatch];
+    NSDictionary *dict = @{
+        @0: @0x12
+    };
+    [self.connectedWatch appMessagesPushUpdate:dict onSent:^(PBWatch *watch, NSDictionary *update, NSError *error) {
+        
+    }];
+    [self.connectedWatch appMessagesAddReceiveUpdateHandler:^BOOL(PBWatch *watch, NSDictionary *update) {
+        [update objectForKey:@0];
+        return YES;
+    }];
+    NSLog(@"Last connected watch: %@", self.connectedWatch);
+
     return YES;
 }
 							
