@@ -57,17 +57,30 @@ static NSArray *dzrPerms;
     [connect initWithAppId:@"150241" andDelegate: self];
     [[DZRRequestManager defaultManager] setDzrConnect:connect];
     [connect authorize:[[self class] dzrPerms]];
+    NSLog(@"Authorizing deezer");
 }
 
 
 - (void)deezerDidLogin
 {
+    NSLog(@"Deezer did login");
     [player initWithConnection:connect];
-    [DZRObject searchFor:DZRSearchTypeTrack withQuery:@"" requestManager:Nil callback:^(DZRObjectList *objList, NSError *err) {
-        if (objList != nil)
-            [objList objectAtIndex:0 withManager:nil callback:^(id obj, NSError *error) {
-                [player play:obj];
-            }];
+    NSLog(@"deezer connected");
+    [DZRObject searchFor:DZRSearchTypeAlbum withQuery:@"Caravan Palace" requestManager:[DZRRequestManager defaultManager] callback:^(DZRObjectList *objList, NSError *err) {
+        if (err) {
+            NSLog(@"%@", err);
+            return;
+        }
+        NSLog(@"%lu", (unsigned long)[objList count]);
+        [objList objectAtIndex:0 withManager:[DZRRequestManager defaultManager]  callback:^(id obj, NSError *error) {
+            if (err) {
+                NSLog(@"%@", err);
+                return;
+            }
+            NSLog(@"%@", obj);
+            NSLog(@"Playing");
+            [player play:obj];
+        }]	;
     }];
 }
 

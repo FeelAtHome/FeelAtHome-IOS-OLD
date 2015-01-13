@@ -15,6 +15,5 @@
 @interface MasterViewController : UITableViewController<DeezerSessionDelegate>
 
 @property (strong, nonatomic) DetailViewController *detailViewController;
-+ (NSArray*) dzrPerms;
 
 @end

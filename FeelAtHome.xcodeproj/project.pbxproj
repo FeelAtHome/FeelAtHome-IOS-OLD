@@ -7,8 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		910D5E481A64767D005706C6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 910D5E471A64767D005706C6 /* AppDelegate.m */; };
+		910D5E4A1A6477E4005706C6 /* ExternalAccessory.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 910D5E491A6477E4005706C6 /* ExternalAccessory.framework */; };
+		910D5E4C1A6477EB005706C6 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 910D5E4B1A6477EB005706C6 /* libz.dylib */; };
+		910D5E4E1A6477F3005706C6 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 910D5E4D1A6477F3005706C6 /* CoreBluetooth.framework */; };
+		910D5E501A6477F8005706C6 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 910D5E4F1A6477F8005706C6 /* CoreMotion.framework */; };
+		910D5E521A6477FD005706C6 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 910D5E511A6477FD005706C6 /* MessageUI.framework */; };
+		910D5E541A64780B005706C6 /* PebbleVendor.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 910D5E531A64780B005706C6 /* PebbleVendor.framework */; };
+		910D5E561A647BB5005706C6 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 910D5E551A647BB5005706C6 /* MediaPlayer.framework */; };
+		910D5E571A647BF9005706C6 /* DZRResources.bundle in Frameworks */ = {isa = PBXBuildFile; fileRef = 9516A5CF1A6142B50083C0A6 /* DZRResources.bundle */; };
+		9148499E1A6408E6007239B2 /* libDeezer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9516A5EC1A6142B50083C0A6 /* libDeezer.a */; };
 		9516A5ED1A6142B50083C0A6 /* DZRResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 9516A5CF1A6142B50083C0A6 /* DZRResources.bundle */; };
-		9516A5EE1A6142B50083C0A6 /* libDeezer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9516A5EC1A6142B50083C0A6 /* libDeezer.a */; };
 		9516A5F01A61435C0083C0A6 /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9516A5EF1A61435C0083C0A6 /* CoreAudio.framework */; };
 		9516A5F21A6143630083C0A6 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9516A5F11A6143630083C0A6 /* AudioToolbox.framework */; };
 		9516A5F41A61436A0083C0A6 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9516A5F31A61436A0083C0A6 /* SystemConfiguration.framework */; };
@@ -18,13 +27,11 @@
 		95532AE81A614036007EA24E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95532AE71A614036007EA24E /* UIKit.framework */; };
 		95532AEE1A614037007EA24E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 95532AEC1A614037007EA24E /* InfoPlist.strings */; };
 		95532AF01A614037007EA24E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 95532AEF1A614037007EA24E /* main.m */; };
-		95532AF41A614037007EA24E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 95532AF31A614037007EA24E /* AppDelegate.m */; };
 		95532AF71A614037007EA24E /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 95532AF51A614037007EA24E /* Main_iPhone.storyboard */; };
 		95532AFA1A614037007EA24E /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 95532AF81A614037007EA24E /* Main_iPad.storyboard */; };
 		95532AFD1A614037007EA24E /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 95532AFC1A614037007EA24E /* MasterViewController.m */; };
 		95532B001A614037007EA24E /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 95532AFF1A614037007EA24E /* DetailViewController.m */; };
 		95532B021A614037007EA24E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 95532B011A614037007EA24E /* Images.xcassets */; };
-		95532B091A614037007EA24E /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95532B081A614037007EA24E /* XCTest.framework */; };
 		95532B0A1A614037007EA24E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95532AE31A614036007EA24E /* Foundation.framework */; };
 		95532B0B1A614037007EA24E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95532AE71A614036007EA24E /* UIKit.framework */; };
 		95532B131A614037007EA24E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 95532B111A614037007EA24E /* InfoPlist.strings */; };
@@ -43,6 +50,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		910D5E461A64767D005706C6 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		910D5E471A64767D005706C6 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		910D5E491A6477E4005706C6 /* ExternalAccessory.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ExternalAccessory.framework; path = System/Library/Frameworks/ExternalAccessory.framework; sourceTree = SDKROOT; };
+		910D5E4B1A6477EB005706C6 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		910D5E4D1A6477F3005706C6 /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
+		910D5E4F1A6477F8005706C6 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		910D5E511A6477FD005706C6 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		910D5E531A64780B005706C6 /* PebbleVendor.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = PebbleVendor.framework; sourceTree = "<group>"; };
+		910D5E551A647BB5005706C6 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		914849CF1A642029007239B2 /* FeelAtHome-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FeelAtHome-Bridging-Header.h"; sourceTree = "<group>"; };
+		914F43B81A6578F30045FE10 /* FeelAtHome.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = FeelAtHome.entitlements; sourceTree = "<group>"; };
 		9516A5CF1A6142B50083C0A6 /* DZRResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = DZRResources.bundle; sourceTree = "<group>"; };
 		9516A5D11A6142B50083C0A6 /* Deezer+Compatibility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Deezer+Compatibility.h"; sourceTree = "<group>"; };
 		9516A5D21A6142B50083C0A6 /* DeezerConnect+Compatibility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "DeezerConnect+Compatibility.h"; sourceTree = "<group>"; };
@@ -84,8 +102,6 @@
 		95532AED1A614037007EA24E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		95532AEF1A614037007EA24E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		95532AF11A614037007EA24E /* FeelAtHome-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FeelAtHome-Prefix.pch"; sourceTree = "<group>"; };
-		95532AF21A614037007EA24E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		95532AF31A614037007EA24E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = AppDelegate.m; sourceTree = "<group>"; };
 		95532AF61A614037007EA24E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
 		95532AF91A614037007EA24E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
 		95532AFB1A614037007EA24E /* MasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MasterViewController.h; sourceTree = "<group>"; };
@@ -94,11 +110,9 @@
 		95532AFF1A614037007EA24E /* DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
 		95532B011A614037007EA24E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		95532B071A614037007EA24E /* FeelAtHomeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FeelAtHomeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		95532B081A614037007EA24E /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		95532B101A614037007EA24E /* FeelAtHomeTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FeelAtHomeTests-Info.plist"; sourceTree = "<group>"; };
 		95532B121A614037007EA24E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		95532B141A614037007EA24E /* FeelAtHomeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FeelAtHomeTests.m; sourceTree = "<group>"; };
-		959A33351A61956200C6807A /* PebbleKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PebbleKit.framework; path = "../pebble-ios-sdk/PebbleKit.framework"; sourceTree = "<group>"; };
 		959A33371A61959900C6807A /* PebbleKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = PebbleKit.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -107,13 +121,21 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				910D5E561A647BB5005706C6 /* MediaPlayer.framework in Frameworks */,
+				910D5E571A647BF9005706C6 /* DZRResources.bundle in Frameworks */,
+				9148499E1A6408E6007239B2 /* libDeezer.a in Frameworks */,
+				910D5E521A6477FD005706C6 /* MessageUI.framework in Frameworks */,
+				910D5E501A6477F8005706C6 /* CoreMotion.framework in Frameworks */,
+				910D5E4E1A6477F3005706C6 /* CoreBluetooth.framework in Frameworks */,
+				910D5E4C1A6477EB005706C6 /* libz.dylib in Frameworks */,
+				910D5E4A1A6477E4005706C6 /* ExternalAccessory.framework in Frameworks */,
 				9516A5F61A6143730083C0A6 /* libicucore.dylib in Frameworks */,
+				910D5E541A64780B005706C6 /* PebbleVendor.framework in Frameworks */,
+				959A33381A61959900C6807A /* PebbleKit.framework in Frameworks */,
 				9516A5F41A61436A0083C0A6 /* SystemConfiguration.framework in Frameworks */,
 				9516A5F21A6143630083C0A6 /* AudioToolbox.framework in Frameworks */,
 				9516A5F01A61435C0083C0A6 /* CoreAudio.framework in Frameworks */,
-				9516A5EE1A6142B50083C0A6 /* libDeezer.a in Frameworks */,
 				95532AE61A614036007EA24E /* CoreGraphics.framework in Frameworks */,
-				959A33381A61959900C6807A /* PebbleKit.framework in Frameworks */,
 				95532AE81A614036007EA24E /* UIKit.framework in Frameworks */,
 				95532AE41A614036007EA24E /* Foundation.framework in Frameworks */,
 			);
@@ -123,7 +145,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				95532B091A614037007EA24E /* XCTest.framework in Frameworks */,
 				95532B0B1A614037007EA24E /* UIKit.framework in Frameworks */,
 				95532B0A1A614037007EA24E /* Foundation.framework in Frameworks */,
 			);
@@ -179,6 +200,7 @@
 		95532AD71A614036007EA24E = {
 			isa = PBXGroup;
 			children = (
+				910D5E531A64780B005706C6 /* PebbleVendor.framework */,
 				959A33371A61959900C6807A /* PebbleKit.framework */,
 				9516A5CE1A6142B50083C0A6 /* DeezerSDK */,
 				95532AE91A614037007EA24E /* FeelAtHome */,
@@ -200,7 +222,12 @@
 		95532AE21A614036007EA24E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				959A33351A61956200C6807A /* PebbleKit.framework */,
+				910D5E551A647BB5005706C6 /* MediaPlayer.framework */,
+				910D5E511A6477FD005706C6 /* MessageUI.framework */,
+				910D5E4F1A6477F8005706C6 /* CoreMotion.framework */,
+				910D5E4D1A6477F3005706C6 /* CoreBluetooth.framework */,
+				910D5E4B1A6477EB005706C6 /* libz.dylib */,
+				910D5E491A6477E4005706C6 /* ExternalAccessory.framework */,
 				9516A5F51A6143730083C0A6 /* libicucore.dylib */,
 				9516A5F31A61436A0083C0A6 /* SystemConfiguration.framework */,
 				9516A5F11A6143630083C0A6 /* AudioToolbox.framework */,
@@ -208,7 +235,6 @@
 				95532AE31A614036007EA24E /* Foundation.framework */,
 				95532AE51A614036007EA24E /* CoreGraphics.framework */,
 				95532AE71A614036007EA24E /* UIKit.framework */,
-				95532B081A614037007EA24E /* XCTest.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -216,8 +242,9 @@
 		95532AE91A614037007EA24E /* FeelAtHome */ = {
 			isa = PBXGroup;
 			children = (
-				95532AF21A614037007EA24E /* AppDelegate.h */,
-				95532AF31A614037007EA24E /* AppDelegate.m */,
+				914F43B81A6578F30045FE10 /* FeelAtHome.entitlements */,
+				910D5E461A64767D005706C6 /* AppDelegate.h */,
+				910D5E471A64767D005706C6 /* AppDelegate.m */,
 				95532AF51A614037007EA24E /* Main_iPhone.storyboard */,
 				95532AF81A614037007EA24E /* Main_iPad.storyboard */,
 				95532AFB1A614037007EA24E /* MasterViewController.h */,
@@ -226,6 +253,7 @@
 				95532AFF1A614037007EA24E /* DetailViewController.m */,
 				95532B011A614037007EA24E /* Images.xcassets */,
 				95532AEA1A614037007EA24E /* Supporting Files */,
+				914849CF1A642029007239B2 /* FeelAtHome-Bridging-Header.h */,
 			);
 			path = FeelAtHome;
 			sourceTree = "<group>";
@@ -306,6 +334,9 @@
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = "Franck Lambertz";
 				TargetAttributes = {
+					95532ADF1A614036007EA24E = {
+						DevelopmentTeam = R6RMEU8B59;
+					};
 					95532B061A614037007EA24E = {
 						TestTargetID = 95532ADF1A614036007EA24E;
 					};
@@ -358,7 +389,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				95532AF41A614037007EA24E /* AppDelegate.m in Sources */,
+				910D5E481A64767D005706C6 /* AppDelegate.m in Sources */,
 				95532AFD1A614037007EA24E /* MasterViewController.m in Sources */,
 				95532AF01A614037007EA24E /* main.m in Sources */,
 				95532B001A614037007EA24E /* DetailViewController.m in Sources */,
@@ -498,20 +529,30 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = FeelAtHome/FeelAtHome.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"/Users/franck/Documents/pebble-ios-sdk",
-					/Users/franck/Documents/FeelAtHome,
+					"$(PROJECT_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "FeelAtHome/FeelAtHome-Prefix.pch";
 				INFOPLIST_FILE = "FeelAtHome/FeelAtHome-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					/Users/franck/Documents/FeelAtHome/DeezerSDK,
+					"$(PROJECT_DIR)/DeezerSDK",
 				);
-				OTHER_LDFLAGS = "-all_load";
+				OTHER_LDFLAGS = (
+					"-all_load",
+					"-ObjC",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "FeelAtHome/FeelAtHome-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -521,20 +562,29 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = FeelAtHome/FeelAtHome.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"/Users/franck/Documents/pebble-ios-sdk",
-					/Users/franck/Documents/FeelAtHome,
+					"$(PROJECT_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "FeelAtHome/FeelAtHome-Prefix.pch";
 				INFOPLIST_FILE = "FeelAtHome/FeelAtHome-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					/Users/franck/Documents/FeelAtHome/DeezerSDK,
+					"$(PROJECT_DIR)/DeezerSDK",
 				);
-				OTHER_LDFLAGS = "-all_load";
+				OTHER_LDFLAGS = (
+					"-all_load",
+					"-ObjC",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "FeelAtHome/FeelAtHome-Bridging-Header.h";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
